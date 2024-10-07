@@ -1,0 +1,98 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BrightLegacy</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <!-- navbar -->
+
+    <section>
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="./img/Brightlegacy_Logo.png" width="280px" alt="Bright Legacy Logo"></a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./Services.html">Services</a>
+                <a href="./about-us.html">About Us</a>
+                <a href="./contact-form.html">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact form -->
+
+    <section class="contact-form">
+    <div class="container-form">
+        <div class="left">
+            <h1>Ready to chat about how account-based marketing can help grow your business?</h1>
+            <div class="underline"></div>
+        </div>
+        <div class="right">
+            <form id="contactForm" method="post" action="">
+                <label for="name">Your Name (required)</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email (required)</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="Phone">Phone</label>
+                <input type="tel" id="Phone" name="Phone">
+                
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+                
+                <!-- <div class="recaptcha">
+                    <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                </div> -->
+                
+                <input type="submit" value="Send">
+            </form>
+
+            <p id="successMessage" style="display:none; color: green; margin-top: 10px;">Your form has been submitted successfully!</p>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+
+<section>
+    <div class="footer-section">
+    <div class="footer-logo">
+        <a href="./index.html"><img src="./img/Brightlegacy_Logo.png" width="280px" alt="Bright Legacy Logo"></a>
+    </div>
+    <div class="footer">
+        <div class="footer-nav">
+            <span>
+                Copyright © 2024 Bright Legacy. All Rights Reserved. |
+            </span>
+            <a href="./privacy-policy.html">Privacy Policy</a>
+            |<a href="#">Terms and Conditions</a>
+        </div>
+            
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook fa-lg" style="color: #555555;"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-lg" style="color: #555555;"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-lg" style="color: #555555;"></i></a>
+                <a href="#"><i class="fab fa-youtube fa-lg" style="color: #555555;"></i></a>
+            </div>
+    </div>
+</div>
+</section>
+
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+    <script src="./javascript.js"></script>
+</body>
+</html>
